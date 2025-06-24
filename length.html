@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #t1msg{
+            color: red;
+        }
+
+        #t2msg{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <label for="t1">mobile No :</label>
+    <input type="number" id="t1">
+    <label id="t1msg"></label><br><br>
+
+    <label for="t2">Email :</label>
+    <input type="email" id="t2">
+    <label id="t2msg"></label><br><br>
+
+    <input type="button" value="Add" id="btn1" OnClick="lengthdemo()">
+<script type="text/javascript">
+
+function lengthdemo(){
+            var a = document.getElementById("t1").value;
+            if (a.length<10){
+                document.getElementById("t1msg").innerHTML = "* please enter a valid mobile No";
+            }
+        }
+
+        function lengthdemo(){
+            let a = document.getElementById("t2").value;
+            if (a=== ""){
+                document.getElementById("t2msg").innerHTML = "*expl abc@gmail.com";
+            }
+        }
+
+</script>
+
+</body>
+</html>
